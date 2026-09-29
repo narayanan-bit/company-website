@@ -350,10 +350,9 @@
 @media (max-width: 600px) {
 
     .about-hero-container {
-        width: calc(100% - 40px);
-
-        padding: 55px 0;
-    }
+    width: calc(100% - 40px);
+    padding: 40px 0 25px;
+}
 
     .about-hero h1 {
         font-size: 46px;
@@ -372,7 +371,10 @@
     }
 
     .about-hero-visual {
-        min-height: 330px;
+    min-height: 250px;
+    height: 250px;
+    margin-top: -10px;
+    margin-bottom: -25px;
     }
 
     .about-orbit {
@@ -609,16 +611,12 @@
 }
 
 /* =========================================
-   OUR MISSION
-========================================= */
-
-/* =========================================
    OUR MISSION (Redesigned)
 ========================================= */
 
 .mission-section {
     background: #FFFFFF;
-    padding: 100px 0;
+    padding: 20px 0 20px;
     position: relative;
     overflow: hidden;
 }
@@ -985,7 +983,7 @@
 @media (max-width: 600px) {
 
     .mission-section {
-        padding: 70px 0;
+        padding: 10px 0 40px;
     }
 
     .mission-features {
@@ -1213,9 +1211,13 @@
 
     .founder-container {
         grid-template-columns: 1fr;
-        padding: 40px 30px;
+        padding: 40px 30px 10px;
         gap: 30px;
         text-align: center;
+    }
+
+    .about-final-cta {
+        padding: 5px 0 65px;
     }
 
     .founder-content h2 span {
@@ -1236,37 +1238,17 @@
 }
 
 .about-cta-container {
+    position: relative;
+    overflow: hidden;
     width: min(1240px, calc(100% - 64px));
-    min-height: 390px;
-
+    min-height: 420px;
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(20, 23, 46, 0.97) 0%,
-            rgba(20, 23, 46, 0.85) 35%,
-            rgba(20, 23, 46, 0.35) 70%,
-            rgba(20, 23, 46, 0.15) 100%
-        );
-
-    position: relative;
-    overflow: hidden;
-
-    clip-path: polygon(
-        18px 0,
-        calc(100% - 18px) 0,
-        100% 18px,
-        100% calc(100% - 18px),
-        calc(100% - 18px) 100%,
-        18px 100%,
-        0 calc(100% - 18px),
-        0 18px
-    );
+    background: #14172E;
+    border: 1px solid rgba(20, 23, 46, 0.08);
+    border-radius: 18px;
 }
 
 .about-cta-content {
@@ -1350,17 +1332,16 @@
 
 @media (max-width: 600px) {
 
-    .about-final-cta {
-        padding: 20px 0 65px;
-    }
-
     .about-cta-container {
         width: calc(100% - 40px);
         min-height: 400px;
+        justify-content: center;
     }
 
     .about-cta-content {
         width: calc(100% - 40px);
+        padding-left: 0;
+        text-align: center;
     }
 
     .about-cta-content h2 {

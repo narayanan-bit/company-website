@@ -1733,3 +1733,144 @@ a {
     }
 
 }
+/* ================================
+   SPLITZON HERO - MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .product-hero-container {
+        width: calc(100% - 40px);
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 55px 0;
+    }
+
+    .product-hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .product-hero-actions {
+        flex-wrap: wrap;
+    }
+
+    .product-platforms {
+        flex-wrap: wrap;
+    }
+
+    .product-hero-visual {
+        width: 100%;
+    }
+
+.splitzon-device-image {
+    width: 110%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    transform: none;
+}
+}
+/* ================================
+   MOBILE TEXT FIX
+================================ */
+
+@media (max-width: 900px) {
+
+    .product-hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-hero-content > p {
+        width: 100%;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+}
+/* ================================
+   XPENDZON HERO - MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .xpendzon-hero-container {
+        width: calc(100% - 40px);
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 55px 0;
+    }
+
+    .xpendzon-hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .xpendzon-hero-visual {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .xpendzon-mobile-image {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        margin: 0 auto;
+        transform: none;
+    }
+
+}
+/* ================================
+   ZHINI HERO - MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .zhini-hero-container {
+        width: calc(100% - 40px);
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 55px 0;
+    }
+
+    .zhini-hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .zhini-hero-visual {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .zhini-device-wrap {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .zhini-device-image {
+        width: 100%;
+        max-width: 430px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+}
+/* Active navigation indicator */
+.main-nav .nav-link {
+    position: relative;
+}
+
+.main-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    width: 32px;
+    height: 3px;
+    transform: translateX(-50%);
+    background: #C5942F;
+    border-radius: 3px;
+}
